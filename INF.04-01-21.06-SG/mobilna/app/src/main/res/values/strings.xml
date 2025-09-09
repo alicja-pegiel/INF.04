@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Rejestracja konta</string>
+    <string name="rejestruj_konto">Rejestruj konto</string>
+    <string name="podaj_email">Podaj e-mail</string>
+    <string name="podaj_haslo">Podaj hasło</string>
+    <string name="powtorz_haslo">Powtórz hasło</string>
+    <string name="zatwierdz">ZATWIERDŹ</string>
+    <string name="autor">Autor: 00000000000</string>
 </resources>
