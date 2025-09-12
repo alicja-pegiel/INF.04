@@ -19,13 +19,23 @@ public class PrzeszukiwanieZWartownikiem {
         System.out.println(tablicaLiczb[rozmiarTablicy-1]);
     }
 
+    /*
+    nazwa funkcji:          szukajElementu
+    argumenty:              szukanyElement - Przechowuje liczbę całkowitą, czyli element poszukiwany w tablicy.
+    typ zwracany:           int indeksElementu - Zwracana jest liczba całkowita, czyli indeks elementu odnalezionego
+                            w tablicy.
+    informacje:             Funkcja umieszcza poszukiwany element na końcu tablicy, a następnie przeszukuje tablicę, by
+                            odnaleźć jego pierwsze wystąpienie i zwrócić jego indeks. Jeśli szukanego elementu nie ma w
+                            tablicy, funkcja zwraca wartownika, czyli indeks wstawionego elementu.
+    autor:                  00000000000
+     */
     public int szukajElementu(int szukanyElement) {
         int indeksElementu = rozmiarTablicy;
         tablicaLiczb[indeksElementu] = szukanyElement;
         for (int i = 0; i < rozmiarTablicy; i++) {
             if (tablicaLiczb[i] == szukanyElement) {
                 indeksElementu = i;
-                break;
+                return indeksElementu;
             }
         }
         return indeksElementu;
